@@ -1,0 +1,11 @@
+#To check specific country time
+from datetime import datetime
+import pytz
+a=pytz.timezone("Asia/Kolkata")
+b=datetime.now(a)
+print(b)
+
+#To check all international timezones
+import pytz
+for i in pytz.all_timezones:
+    print(i)
