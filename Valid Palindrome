@@ -6,4 +6,4 @@ class Solution:
         if s==rev:
             return True
         else:
-            return False
+            return False 
