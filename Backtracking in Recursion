@@ -1,0 +1,7 @@
+def flower(a):
+    if a==22:
+        return
+    print(a+10,end=" ")
+    flower(a+1)
+    print(a,end=" ")
+flower(1)
