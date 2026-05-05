@@ -1,0 +1,10 @@
+pip install qrcode
+
+import qrcode
+qr=qrcode.QRCode()
+a="Princess Praharika"
+qr.add_data(a)
+qr.make(fit=True)
+res=qr.make_image(fill_color="black", back_color="white")
+res.save("qr.png")
+print("Created QR Code successfully")
