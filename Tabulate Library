@@ -6,3 +6,16 @@ data=[["Harika",22,"CSE"],
       ["Varshini",19,"IT"]]
 res=tabulate(data,headers=title,tablefmt="fancy_grid")
 print(res)
+
+
+#Write mode
+from tabulate import tabulate
+title=["Name","Age","Dept"]
+data=[["Harika",22,"CSE"],
+      ["Praharika",18,"CSM"],
+      ["Sruthi",19,"CSO"],
+      ["Varshini",19,"IT"]]
+res=tabulate(data,headers=title,tablefmt="fancy_grid")
+with open("Praharika.txt",'w') as file:
+    file.write(res)
+print("Done")
