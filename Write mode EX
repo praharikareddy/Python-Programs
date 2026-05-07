@@ -1,0 +1,10 @@
+#Write mode
+a=open("tvk.txt",'w')
+n1=int(input("Enter any num1: "))
+n2=int(input("Enter any num2: "))
+s=n1+n2
+a.write(str(n1)+"\n")
+a.write(str(n2)+"\n")
+a.write(str(s))
+print("OK")
+a.close()
