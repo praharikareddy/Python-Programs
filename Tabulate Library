@@ -19,3 +19,12 @@ res=tabulate(data,headers=title,tablefmt="fancy_grid")
 with open("Praharika.txt",'w') as file:
     file.write(res)
 print("Done")
+
+
+#Read mode
+a=open("Praharika.txt","r")
+c=a.readlines()
+while c:
+  print(c)
+  c=a.readlines()
+a.close()
